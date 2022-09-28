@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Moeda</title>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+             <div>
+                 <h2>Sitema de Conversão kz para € </h2>
+             </div>
+
+             <div class="container_valores">
+                <div class="container">
+                    
+                    <br>
+                    <i>ss</i>
+                    <input type="number" value="" placeholder="KZ" id="valor1">
+                    <i>ss</i>
+                    <input type="number" value="" placeholder="€" id="valor2">
+                    <br>
+                    <p class="resul"></p>
+                    <br>
+                    <button onclick="calcular()">Calcular</button>
+              
+                </div>
+             </div>
+        </div>
+    </main>
+    
+    <script>
+
+        
+           let valor1 = document.getElementById('valor1')
+           let valor2 = document.getElementById('valor2')
+        
+
+              function calcular(){
+
+                let valorkz = valor1.value;
+                let valorEuro = valor2.value;
+                let resultado;
+                resultado = Number(valorkz)*Number(valorEuro);
+        
+                document.querySelector('.resul').innerHTML=resultado;
+            
+                console.log(resultado);
+´~
++    </script>
+
+</body>
+</html>
